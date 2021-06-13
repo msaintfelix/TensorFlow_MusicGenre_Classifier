@@ -16,7 +16,7 @@ This code is a standalone Jupyter Notebook in a Conda-Python3 environment using 
 
 	1 - Inspect and preprocess data
 	
-The dataset consists of 30 second songs in .wav format (999 total), divided into 10 folders, each corresponding to a musical genre. Firstly, we will label each genre using its folder index and split each 30 second sample in the desired amount of slices. Then we will calculate the MFCC (Mel-Frequency Cepstrum Coefficient) for each slice and store it with the associated label in a json file.
+The dataset consists of 30 second songs in .wav format (999 total), divided into 10 folders, each corresponding to a musical genre. Firstly, we will label each genre using its folder index and split each 30 second sample in the desired amount of slices. Then we will calculate the MFCC (Mel-Frequency Cepstrum Coefficients) for each slice and store it with the associated label in a json file.
 
 In sound processing, the mel-frequency cepstrum is a representation of the short-term power spectrum of a sound, based on a linear cosine transform of a log power spectrum on a nonlinear mel scale of frequency.
 
