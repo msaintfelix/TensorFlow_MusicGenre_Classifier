@@ -1,16 +1,17 @@
 # TensorFlow_MusicGenre_Classifier
-Classifying wav files using their MFCC. Following Valerio Velardo tutorial on this topic.
+Classifying wav files using their MFCC. Following Valerio Velardo tutorials on this topic.
 
 # Objective
 
-The objective of this project is to classify 30 sec audio files by genre using a TensorFLow MLP model. To classify these audio samples in .wav format, we will preprocess them by calculating their MFCC, which is a temporal representation of the energy variations for each perceived frequency band. In this case, we are choosing 13 bands.
+The objective of this project is to classify 30 sec audio files by genre using a TensorFLow models. To classify these audio samples in .wav format, we will preprocess them by calculating their MFCC, which is a temporal representation of the energy variations for each perceived frequency band. In this case, we are choosing 13 bands.
 
 # Environment and tools
 
 The GTZAN dataset can be found here:
 https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification
 
-This code is a standalone Jupyter Notebook in a Conda-Python3 environment using Numpy, Scikit-Learn, Matplotlib and TensorFlow Keras.
+The first notebook is a standalone Jupyter Notebook in a Conda-Python3 environment using Numpy, Scikit-Learn, Matplotlib and TensorFlow Keras. 
+The second version is a more modular architecture using a convolutional neural network.
 
 # Project steps
 
@@ -24,12 +25,15 @@ All audio files are clean (no noise), no extra preprocessing is required.
 
 	2 - Train and predict
 	
-We are using a MLP model with a Flatten() layer whose input shape matches the number of MFCC bands and time frames. The other layers are Dense() fully connected with a 10 output softmax Dense() as the final layer (for all 10 classes/genres).
+In the first notebook, we are using a MLP model with a Flatten() layer whose input shape matches the number of MFCC bands and time frames. The other layers are Dense() fully connected with a 10 output softmax Dense() as the final layer (for all 10 classes/genres).
 
-	3 - Model performance
+In the second notebook, we are using a CNN with fully connected MLP as its final stage.
+
+	3 - Models performance
 	
 We are using Matplotlib with 'accuracy' metric to plot the training and validation curves after 50 epochs and an RMSprop optimizer with a learning rate lr=0.001.
 
-Tweaking various hyperparameters led to a final 70% on the training set and 60% on the validation set. Not bad, but more features are probably needed to reach better accuracy given the limited number of training examples. More slices result in shorter samples and affects performance. 
+For the MLP version, tweaking various hyperparameters led to a final 70% on the training set and 60% on the validation set. Not bad, but more features are probably needed to reach better accuracy given the limited number of training examples. More slices result in shorter samples and affects performance. A more complex MLP architecture did not improve the final results and slowed down the training process.
 
-A more complex MLP architecture did not improve the final results and slowed down the training process.
+For the CNN version, .....
+
