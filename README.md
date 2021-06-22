@@ -12,6 +12,7 @@ https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification
 
 The first notebook is a standalone Jupyter Notebook in a Conda-Python3 environment using Numpy, Scikit-Learn, Matplotlib and TensorFlow Keras. 
 The second notebook is a more modular app structure using a convolutional neural network.
+The third notebook features an LSTM model (RNN).
 
 # Project steps
 
@@ -27,7 +28,7 @@ All audio files are clean (no noise), no extra preprocessing is required.
 	
 In the first notebook, we are using a MLP model with a Flatten() layer whose input shape matches the number of MFCC bands and time frames. The other layers are Dense() fully connected and the final layer is a 10 output softmax Dense() for all 10 classes/genres.
 
-In the second notebook, we are using a CNN with fully connected MLP as its final stage.
+In the second and third notebooks, we are using a CNN and an LSTM with fully connected MLP as final stage.
 
 	3 - Models performance
 	
@@ -36,3 +37,4 @@ We are using Matplotlib with 'accuracy' metric to plot the training and validati
 For the MLP version, tweaking various hyperparameters led to a final 70% on the training set and 60% on the validation set. Not bad, but more features are probably needed to reach better accuracy given the limited number of training examples. More slices result in shorter samples and affects performance. A more complex MLP architecture did not improve the final results and slowed down the training process.
 
 For the CNN version, we get close to 80% on validation data. A make_prediction() method has been added for inference purposes.
+The LSTM version reaches the same range of performance.
