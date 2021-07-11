@@ -1,5 +1,5 @@
 # TensorFlow_MusicGenre_Classifier
-Classifying wav files using their MFCC. Following Valerio Velardo tutorials on this topic.
+Classifying wav files using their MFCC.
 
 # Objective
 
