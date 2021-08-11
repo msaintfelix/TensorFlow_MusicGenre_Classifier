@@ -1,9 +1,9 @@
 # TensorFlow_MusicGenre_Classifier
-Classifying wav files using their MFCC. Following Valerio Velardo tutorials on this topic.
+Classifying wav files using their MFCC.
 
 # Objective
 
-The objective of this project is to classify 30 sec audio files by genre using TensorFLow models. To classify these audio samples in .wav format, we will preprocess them by calculating their MFCC, which is a temporal representation of the energy variations for each perceived frequency band. In this case, we are choosing 13 bands.
+The objective of this project is to classify 30 sec audio files by genre using TensorFlow models. To classify these audio samples in .wav format, we will preprocess them by calculating their MFCC, which is a temporal representation of the energy variations for each perceived frequency band. In this case, we are choosing 13 bands.
 
 # Environment and tools
 
