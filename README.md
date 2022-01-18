@@ -41,3 +41,5 @@ For the MLP version, tweaking various hyperparameters led to a final 70% on the 
 
 For the CNN version, we get close to 80% on validation data. A make_prediction() method has been added for inference purposes.
 The LSTM version reaches the same range of performance.
+
+Check out the execution on Kaggle: https://www.kaggle.com/marchenrysaintfelix/music-genre-cnn-classifier-with-75-val-acc
