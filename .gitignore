@@ -2,6 +2,8 @@ data.json
 .DS_Store
 Dataset/
 .idea/
+MyModel.h5
+flagged/
 
 
 
