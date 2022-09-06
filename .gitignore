@@ -5,6 +5,8 @@ Dataset/
 MyModel.h5
 flagged/
 wandb/
+artifacts/
+Model/
 
 
 ### Python template
